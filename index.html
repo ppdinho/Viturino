@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar"></div>
+    <div class="Estado">Estado De Minas</div>
+    <div class="traco1"></div>
+    <div class="compre">Compre pelo telefone (somente vendas): +55 (31) 9755-1596.</div>
+  <div class="logo"><img src="Design sem nome (1) 1 (2).png" alt="" class="imglogo"></div>
+
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Pesquisar produtos...">
+    <div id="suggestions" class="suggestions"></div>
+</div>
+
+
+
+<div class="loc"><a href=""><img src="localizacao 1 (2).png" alt=""></a></div>
+
+
+<div class="traco2"></div>
+
+<nav>
+    <button class="menu-button" id="menu-button">=</button>
+    <div class="menu" id="menu">
+        <div class="menu-item" onclick="goToPage('ferramentas.html')">Demasiados</div>
+        <div class="menu-item" onclick="goToPage('ferramentas.html')">Ferramentas</div>
+        <div class="menu-item" onclick="goToPage('hidraulica.html')">Elétrica</div>
+        <div class="menu-item" onclick="goToPage('forro-pvc.html')">Ferragem</div>
+        <div class="menu-item" onclick="goToPage('pintura.html')">Hidráulica</div>
+        <div class="menu-item" onclick="goToPage('mais-vendidos.html')">Forro PVC</div>
+    </div>
+</nav>
+
+
+<div class="traco3"></div>
+
+
+
+<div class="imagemG"><img src="FERRAMENT 1 (3).png" alt="" class="IMAGEMGRANDE"></div>
+<div class="caminhao"><img src="caminhao-de-entrega (1) 1 (1).png" alt="" class="caminhaoG"></div>
+<div class="entregaC">FAZEMOS ENTREGA</div>
+<div class="verificaimg"><img src="verifica 1.png" alt="" class="verificado"></div>
+<div class="vv">COMPRA SEGURA</div>
+
+
+<div class="cartao"><img src="cartao 1.png" alt=""></div>
+<div class="parcele">PARCELE EM ATÉ 10X</div>
+<div class="DESTAQUE">DESTAQUES</div>
+<div class="traco4"></div>
+
+
+
+
+
+
+
+
+
+<!--PRODUTOS-->
+
+
+
+
+<div class="moldura1"><img src="Design sem nome.png" alt="" class="molsura1_1"></div>
+<a href="" class="a1"><div class="Produto1"><img src="suvinil_massa_corrida_0_9 2.png" alt="" class="Produto1_1"></div></a>
+<div class="TextoProduto1">MASSA CORRIDA SUVINIL</div>
+<div class="bio">0,9l</div>
+
+
+<div class="moldura2"><img src="Design sem nome.png" alt=""></div>
+<a href="" class="a2"><div class="Produto2"><img src="plafon_pv_branco_com_bocal_de_porcelana_1x_e27_blumenau_iluminacao_753_1_b890f15b4d8f9ea8cd5e629ab3f69087 1.png" alt="" class="Produto2_1"></div></a>
+<div class="TextoProduto2">PAFLON</div>
+
+
+<div class="moldura3"><img src="Design sem nome.png" alt=""></div>
+<a href="" class="a3"><div class="Produto3"><img src="shopping 1.png" alt="" class="Produto3_1"></div></a>
+<div class="TextoProduto3">TORNEIRA BICA MÓVEL</div>
+
+
+<div class="moldura4"><img src="Design sem nome.png" alt=""></div>
+<a href="" class="a4"><div class="Produto4"><img src="Espacador-Nivelador-20mm-Verde-Cortag---102620 1.png" alt="" class="Produto4_2"></div></a>
+<div class="TextoProduto4">ESPAÇADOR NIVELADOR DE REVESTIMENTO</div>
+
+
+<div class="moldura5"><img src="Design sem nome.png" alt=""></div>
+<a href="" class="a5"><div class="Produto5"><img src="dd.png" alt="" class="Produto5_2"></div></a>
+<div class="TextoProduto5">Tinta acrílica interior</div>
+
+
+<div class="moldura6"><img src="Design sem nome.png" alt=""></div>
+<a href="" class="a5"><div class="Produto6"><img src="5hG3j6r 1.png" alt="" class="Produto6_2"></div></a>
+<div class="TextoProduto6">Suvinil rende e cobre muito</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const products = [
+        { name: "Camiseta Básica", link: "ferramentas.html" },
+        { name: "Calça Jeans", link: "calca-jeans.html" },
+        { name: "Tênis Esportivo", link: "tenis-esportivo.html" },
+        { name: "Relógio Digital", link: "relogio-digital.html" },
+        { name: "Bolsa de Couro", link: "bolsa-couro.html" },
+        { name: "Fone de Ouvido Bluetooth", link: "fone-bluetooth.html" },
+        { name: "Jaqueta de Inverno", link: "jaqueta-inverno.html" },
+        { name: "Camisa Social", link: "camisa-social.html" },
+        { name: "Mochila Escolar", link: "mochila-escolar.html" },
+        { name: "Bermuda Casual", link: "bermuda-casual.html" }
+    ];
+
+    const searchBar = document.getElementById('search-bar');
+    const suggestionsContainer = document.getElementById('suggestions');
+
+    searchBar.addEventListener('input', () => {
+        const query = searchBar.value.toLowerCase();
+        suggestionsContainer.innerHTML = '';
+
+        if (query) {
+            const filteredProducts = products.filter(product =>
+                product.name.toLowerCase().includes(query)
+            );
+
+            filteredProducts.forEach(product => {
+                const suggestion = document.createElement('div');
+                suggestion.className = 'suggestion';
+                suggestion.textContent = product.name;
+                suggestion.addEventListener('click', () => {
+                    window.location.href = product.link;
+                });
+                suggestionsContainer.appendChild(suggestion);
+            });
+        }
+    });
+
+
+    const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        // Toggle dropdown menu on small screens
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        // Navigation function
+        function goToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+</script>
+</script>
+</body>
+</html>

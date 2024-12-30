@@ -1,0 +1,525 @@
+.sidebar{
+    position: relative;
+    width: 1875px;
+    height: 60px;
+    background-color: red;
+    right: 10px;
+    top: -8px;
+}
+.Estado{
+    position: relative;
+top: -45px;
+left: 480px;
+width: 120px;
+color: white;
+font-size: 12px;
+}
+.traco1{
+    position: relative;
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    left: 570px;
+    top: -79px;
+}
+.compre{
+    position: relative;
+    top: -110px;
+    left: 580px;
+    width: 420px;
+    color: white;
+    font-size: 12px;
+}
+.logo{
+    position: relative;
+    left: 500px;
+    width: 30px;
+
+    top: -70px;
+}
+.imglogo{
+    height: 150px;
+}
+
+
+.loc{
+    position: relative;
+    left: 1100px;
+    top: -230px;
+    width: 30px;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+    left: 750px;
+    top: -200px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+}
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+.traco2{
+    position: relative;
+    width: 901px;
+    height: 2px;
+    background-color: black;
+    left: 350px;
+    top: -120px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.menu {
+    position: relative;
+    top: -80px;
+    right: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+.menu-item {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+.menu-item:hover {
+    color: red;
+}
+
+/* Responsive Dropdown */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-button {
+        position: relative;
+        top: 380px;
+        display: block;
+        background-color: black;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+
+    .imagemG{
+        display: none;
+    }
+    .imagemG{
+        display: none;
+    }
+
+
+    .caminhao{
+        display: none;
+    }
+    .entregaC{
+        display: none;
+    }
+    .verificaimg{
+        display: none;
+    }
+    .vv{
+        display: none;
+    }
+    .cartao{
+        display: none;
+    }
+    .parcele{
+        display: none;
+    }
+    .traco2{
+        display: none;
+    }
+    .traco3{
+        display: none;
+    }
+
+    .sidebar{
+        width: 1700px;
+    }
+.logo{
+    position: relative;
+    top: 120px;
+    left: 810px;
+}
+.search-container{
+    position: relative;
+    top: 100px;
+}
+
+.moldura1{
+    position: relative;
+   left: 500px;
+   top: 900px;
+}
+
+.moldura2{
+    position: relative;
+    left: 400px;
+}
+.molsura1_1{
+    position: relative;
+    left: 00px;
+}
+.loc{
+    display: none;
+}
+
+
+
+
+.compre{
+    display: none;
+}
+.Estado{
+    display: none;
+}
+.traco1{
+    display: none;
+}
+
+
+
+
+
+
+}
+@media (min-width: 769px) {
+    .menu-button {
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+.traco3{
+    position: relative;
+    width: 901px;
+    height: 2px;
+    background-color: black;
+    left: 350px;
+    top: -50px;
+
+}
+
+
+.imagemG{
+    position: relative;
+    top: 40px;
+    width: 1px;
+    left: -10px;
+}
+.IMAGEMGRANDE{
+    width: 1875px;
+}
+
+
+.caminhao{
+    position: relative;
+    top: 80px;
+    left: 450px;
+    width: 50px;
+}
+.caminhaoG{
+    width: 40px;
+}
+.entregaC{
+    width: 130px;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    font-size: 10px;
+    color: red;
+}
+
+.verificaimg{
+    width: 130px;
+    position: relative;
+    top: 35px;
+    left: 700px;
+}
+
+.vv{
+    width: 130px;
+    position: relative;
+    left: 735px;
+    font-size: 10px;
+    top: 12px;
+    color: red;
+}
+.cartao{
+    position: relative;
+    width: 130px;
+    left: 900px;
+    top: -5px;
+}
+.parcele{
+    position: relative;
+    width: 130px;
+    left: 940px;
+    top: -30px;
+    font-size: 10px;
+    color: red;
+}
+.DESTAQUE{
+    width: 130px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+}
+.traco4{
+    position: relative;
+    width: 1300px;
+    height: 2px;
+    background-color: rgba(182, 173, 173, 1);
+    left: 350px;
+    top: 40px;
+}
+.imgg2{
+    width: 30px;
+}
+.moldura1{
+    width: 130px;
+    position: relative;
+    top: 130px;
+    left: 220px;
+}
+.Produto1{
+    width: 150px;
+    position: relative;
+    left: 235px;
+    top: -30px;
+}
+.Produto1_1{
+    width: 110px;
+}
+.TextoProduto1{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 230px;
+    top: 10px;
+}
+.bio{
+    position: relative;
+    width: 90px;
+    font-size: 12px;
+    left: 280px;
+    top: 10px;
+}
+
+
+.moldura2{
+    width: 130px;
+    position: relative;
+    top: -200px;
+    left: 820px;
+}
+.Produto2{
+    width: 150px;
+    position: relative;
+    left: 840px;
+    top: -350px;
+}
+.Produto2_1{
+    width: 110px;
+}
+.TextoProduto2{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 865px;
+    top: -320px;
+}
+.bio2{
+    position: relative;
+    width: 90px;
+    font-size: 12px;
+    left: 300px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.moldura3{
+    width: 130px;
+    position: relative;
+    top: -500px;
+    left: 1450px;
+}
+.Produto3{
+    width: 150px;
+    position: relative;
+    left: 1480px;
+    top: -640px;
+}
+.Produto3_1{
+    width: 90px;
+}
+.TextoProduto3{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 1450px;
+    top: -620px;
+}
+.bio3{
+    position: relative;
+    width: 90px;
+    font-size: 12px;
+    left: 300px;
+    top: 10px;
+}
+
+
+
+
+.moldura4{
+    width: 130px;
+    position: relative;
+    top: -500px;
+    left: 220px;
+}
+.Produto4{
+    width: 150px;
+    position: relative;
+    left: 240px;
+    top: -650px;
+}
+.Produto4_2{
+    width: 110px;
+}
+.TextoProduto4{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 210px;
+    top: -620px;
+}
+
+
+
+.moldura5{
+    width: 130px;
+    position: relative;
+    top: -830px;
+    left: 820px;
+}
+.Produto5{
+    width: 150px;
+    position: relative;
+    left: 840px;
+    top: -985px;
+}
+.Produto5_2{
+    width: 110px;
+}
+.TextoProduto5{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 830px;
+    top: -970px;
+}
+
+
+
+
+.moldura6{
+    width: 130px;
+    position: relative;
+    top: -1150px;
+    left: 1450px;
+}
+.Produto6{
+    width: 150px;
+    position: relative;
+    left: 1465px;
+    top: -1300px;
+}
+.Produto6_2{
+    width: 110px;
+}
+.TextoProduto6{
+    position: relative;
+    width: 200px;
+    font-size: 13px;
+    left: 1450px;
+    top: -1290px;
+}
